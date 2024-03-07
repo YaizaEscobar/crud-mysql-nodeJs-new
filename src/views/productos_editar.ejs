@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCTOS CON NODE.JS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark bg-dark">
+        <a href="/" class="navbar-brand">Aplicacion Crud NodeJs Mysql</a>
+    </nav>
+
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="card">
+                    <div class="card-body">
+                        <form action="/update/<%= data.id %>" method="post">
+                            <div class="form-group mt-2">
+                                <input type="text" name="nombreProducto" value="<%= data.nombreProducto %>" class="form-control">
+                            </div>
+                            <div class="form-group mt-2">
+                                <input type="text" name="descripcion" value="<%= data.descripcion %>" class="form-control">
+                            </div>
+                            <div class="form-group mt-2">
+                                <input type="text" name="precio" value="<%= data.precio %>" class="form-control">
+                            </div>
+                            <div class="form-group mt-2">
+                                <input type="text" name="nombreImagen" value="<%= data.nombreImagen %>" class="form-control">
+                            </div>
+                            <div class="form-group mt-2">
+                                <input type="text" name="id_Calidad" value="<%= data.id_calidad %>" class="form-control">
+                            </div>
+                            <button type="submit" class="btn btn-primary mt-2">Guardar Producto</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
